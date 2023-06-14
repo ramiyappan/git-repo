@@ -1,3 +1,1 @@
 This is an example.
-new line.
-another new line.
