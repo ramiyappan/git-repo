@@ -11,6 +11,22 @@
 - Use `git commit` to commit files to the local repository.
 
 - Use `git push` to publish changes to remote repository.
+  
+- Use `git init` to initialize an empty local repository.
+
+- Use `git remote add origin <repo_link>` to connect an empty remote repository to the local repository.
+
+- If there is nothing/no branch in an empty repository, you need to use `git push --set-upstream origin main` to create a new branch and push the local repo for the first time.
+
+- Use `new-item -name '<name-of-file>.md'` to create a new-file in the local repo from the terminal.
+
+- Use `git diff` to show changes in file that has not been reflected anywhere.
+
+- Use `git log` to check commit history.
+
+- Use `git restore --staged <file_name>` to restore the state before staging content.
+
+- Use `git revert <commit-id>` to revert back to a previous state of the repo. You can get commit-ids using `git log --oneline`.
 
 ## Pushing local files to a remote repository on GitHub.
 
