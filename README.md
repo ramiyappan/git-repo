@@ -53,6 +53,8 @@ If password doesn't work generate a temporary token from github profile and copy
   - Goto `Developer settings` in Github `account settings` > `Personal access tokens` > `Tokens classic` > `Generate new token` > `Classic Token`
   - Copy paste this token as the password in the terminal.
 
+> After cloning a remote repository, its better to open that folder in VScode and use the Terminal from inside.
+
 ## Pushing files to Staging area
 Use `git add` to add a file to the staging area so that github knows that you want to save and consider these files in the next commit.
 ```
