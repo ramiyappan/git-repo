@@ -18,6 +18,8 @@ Follow these steps in the same order to push any file or project to a remote rep
 
 1. [Cloning a Remote repository](#cloning-a-remote-repository)
 2. [Pushing files to staging area](#pushing-files-to-staging-area)
+3. [Commit locally](#commit-locally)
+4. [Push to remote repo](#push-to-remote-repo)
 
 ## Cloning a Remote repository
 
@@ -46,7 +48,7 @@ git add .
 
 We can always use `git status` to check which files are currently in the staging area, i.e., it shows the changes that still need to be committed.
 
-## Commit a file locally
+## Commit locally
 
 Use `git commit` to commit files to the local repository.
 ```
@@ -59,7 +61,7 @@ Using `git status` after this point will tell us that all files have been commit
 
 > So we need to push these changes to the remote repository to maintain everything on the same page.
 
-## Pushing files to remote repo
+## Push to remote repo
 
 Use `git push` to publish the local repository to the remote repo. 
 After that, all changes made locally will be reflected in the remote repository on GitHub.
