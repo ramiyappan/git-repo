@@ -16,7 +16,7 @@
 
 Follow these steps in the same order to push any file or project to a remote repository from terminal : 
 
-1. [Cloning a Remote repository]()
+1. [Cloning a Remote repository](##-cloning-a-remote-repository)
 
 
 ## Cloning a Remote repository
