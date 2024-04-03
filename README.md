@@ -38,6 +38,7 @@ Follow these steps in the same order to push any file or project to a remote rep
 2. [Pushing files to staging area](#pushing-files-to-staging-area)
 3. [Commit locally](#commit-locally)
 4. [Push to remote repo](#push-to-remote-repo)
+5. [Publish React App to gh-pages](#publish-react-app-to-gh-pages)
 
 ## Cloning a Remote repository
 
@@ -85,3 +86,34 @@ Using `git status` after this point will tell us that all files have been commit
 
 Use `git push` to publish the local repository to the remote repo. 
 After that, all changes made locally will be reflected in the remote repository on GitHub.
+
+## Publish React App to gh-pages
+
+<ul>
+<li>Install the gh-pages package by running the following command: </li><br>
+
+    npm install gh-pages --save-dev
+
+<li>Configure package.json file by adding these following lines: </li><br>
+
+    "homepage": "https://your-username.github.io/your-repo-name",
+    "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+    }
+
+<li>Replace your-username with your GitHub username and your-repo-name with the name of your repository. </li>
+
+<li>Deploy your app by running:</li><br>
+
+```
+npm run deploy
+```
+
+> This will create a new branch called gh-pages in your repository and push the built files from the build directory to that branch.
+
+<li>Enable GitHub Pages: Go to your repository on GitHub and navigate to the "Settings" tab. Scroll down to the "GitHub Pages" section 
+    and select the gh-pages branch as the source for your GitHub Pages site. </li>
+
+<li>Access your deployed app: After a few moments, your React app should be deployed and accessible at the URL mentioned 
+    in the "GitHub Pages" section of your repository settings.</li>
