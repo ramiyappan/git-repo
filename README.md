@@ -67,7 +67,8 @@ You can also use `.` to add all files at the local folder to the staging area.
 git add .
 ```
 
-We can always use `git status` to check which files are currently in the staging area, i.e., it shows the changes that still need to be committed.
+> [!TIP]
+> We can always use `git status` to check which files are currently in the staging area or those that have been modified, i.e., it shows the changes that still need to be committed.
 
 ## Commit locally
 
@@ -89,10 +90,11 @@ After that, all changes made locally will be reflected in the remote repository 
 
 ## Publish React App to gh-pages
 
-<ul>
-<li>Install the gh-pages package by running the following command: </li><br>
+Follow these steps to deploy a react application on GitHub Pages:
 
-    npm install gh-pages --save-dev
+  - Install the gh-pages package by running the following command:
+
+        npm install gh-pages --save-dev
 
 <li>Configure package.json file by adding these following lines: </li><br>
 
@@ -102,7 +104,16 @@ After that, all changes made locally will be reflected in the remote repository 
     "deploy": "gh-pages -d build"
     }
 
-<li>Replace your-username with your GitHub username and your-repo-name with the name of your repository. </li>
+> Replace your-username with your GitHub username and your-repo-name with the name of your repository.
+
+<li> (Optional) If using Vite build, then add the base path to the `vite.config.js` such as:</li>
+
+```
+export default defineConfig({
+  plugins: [react()],
+  base: '/your-repo-name/'
+})
+```
 
 <li>Deploy your app by running:</li><br>
 
