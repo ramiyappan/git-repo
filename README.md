@@ -2,6 +2,12 @@
 
 This is just an information repository that contains commands and steps to configure git and push files from local device to remote Repository. Built it for my own reference, but happy if it helped someone!
 
+## Sections
+
+1. [Terminal commands](#terminal-commands)
+2. [Pushing files to remote repository](#pushing-local-files-to-a-remote-repository-on-github)
+3. [Publish React App to GitHub pages](#publish-react-app-to-gh-pages)
+
 ## Terminal commands
 
 - Use `git config --list` to check the default settings of git for a device.
@@ -38,9 +44,8 @@ Follow these steps in the same order to push any file or project to a remote rep
 2. [Pushing files to staging area](#pushing-files-to-staging-area)
 3. [Commit locally](#commit-locally)
 4. [Push to remote repo](#push-to-remote-repo)
-5. [Publish React App to gh-pages](#publish-react-app-to-gh-pages)
 
-## Cloning a Remote repository
+### Cloning a Remote repository
 
 To clone/download a git repo to a local device, use
 ```
@@ -56,7 +61,7 @@ If password doesn't work generate a temporary token from github profile and copy
 
 > After cloning a remote repository, its better to open that folder in VScode and use the Terminal from inside.
 
-## Pushing files to Staging area
+### Pushing files to Staging area
 Use `git add` to add a file to the staging area so that github knows that you want to save and consider these files in the next commit.
 ```
 git add <filename>
@@ -70,7 +75,7 @@ git add .
 > [!TIP]
 > We can always use `git status` to check which files are currently in the staging area or those that have been modified, i.e., it shows the changes that still need to be committed.
 
-## Commit locally
+### Commit locally
 
 Use `git commit` to commit files to the local repository.
 ```
@@ -83,7 +88,7 @@ Using `git status` after this point will tell us that all files have been commit
 
 > So we need to push these changes to the remote repository to maintain everything on the same page.
 
-## Push to remote repo
+### Push to remote repo
 
 Use `git push` to publish the local repository to the remote repo. 
 After that, all changes made locally will be reflected in the remote repository on GitHub.
