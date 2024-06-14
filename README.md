@@ -1,4 +1,4 @@
-# git-repo
+# Maintaining a git repository
 
 This is just an information repository that contains commands and steps to configure git and push files from local device to remote Repository. Built it for my own reference, but happy if it helped someone!
 
