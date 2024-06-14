@@ -96,35 +96,35 @@ Follow these steps to deploy a react application on GitHub Pages:
 
         npm install gh-pages --save-dev
 
-<li>Configure package.json file by adding these following lines: </li><br>
+  - Configure `package.json` file by adding these following lines:
 
-    "homepage": "https://your-username.github.io/your-repo-name",
-    "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-    }
+        "homepage": "https://your-username.github.io/your-repo-name",
+        "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
+        }
 
-> Replace your-username with your GitHub username and your-repo-name with the name of your repository.
+    > Replace your-username with your GitHub username and your-repo-name with the name of your repository.
 
-<li> (Optional) If using Vite build, then add the base path to the `vite.config.js` such as:</li>
+  - (Optional) If using Vite build, then add the base path to the `vite.config.js` such as:
 
-```
-export default defineConfig({
-  plugins: [react()],
-  base: '/your-repo-name/'
-})
-```
+      ```
+      export default defineConfig({
+        plugins: [react()],
+        base: '/your-repo-name/'
+      })
+      ```
 
-<li>Deploy your app by running:</li><br>
+  - Deploy your app by running:
 
-```
-npm run deploy
-```
+      ```
+      npm run deploy
+      ```
 
-> This will create a new branch called gh-pages in your repository and push the built files from the build directory to that branch.
+    > This will create a new branch called gh-pages in your repository and push the built files from the build directory to that branch.
 
-<li>Enable GitHub Pages: Go to your repository on GitHub and navigate to the "Settings" tab. Scroll down to the "GitHub Pages" section 
-    and select the gh-pages branch as the source for your GitHub Pages site. </li>
+  - Enable GitHub Pages: Go to your repository on GitHub and navigate to the `Settings` tab. Scroll down to the `GitHub Pages` section 
+    and select the `gh-pages` branch as the source for your GitHub Pages site.
 
-<li>Access your deployed app: After a few moments, your React app should be deployed and accessible at the URL mentioned 
-    in the "GitHub Pages" section of your repository settings.</li>
+  - Access your deployed app: After a few moments, your React app should be deployed and accessible at the URL mentioned 
+    in the `GitHub Pages` section of your repository settings.
